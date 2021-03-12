@@ -7,26 +7,31 @@ Program goals:
 
 
 """
-
+inport random 
 def mainProgram():
     #build our while loop
     while True:
         print("Hello, there! let's work with lists")
         print("please choose from the following options.  Type the number of choice")
         choice = input("1. Add to list, 2. Return a value at a list   ")
-        if choice == "1":
-            addToList()
+            if choice == "1":
+                addToList()
             elif choice == "2":
                 indexValues()
-            elif choice == "3":
+            elif choice =="3":
+                randomSearch()
+            else:
                 break
 
 def addToList():
     print("Adding to a list! Great choice!")
     newItem = input("Type an integer here!  ")
     myLIst.append (int(newItem))
-    #we neeed to think about errors!
-    
+    #we need to think about errors!
+
+def randomSearch():
+    print("oH IM sO rAnDom!!!")
+    print myList[random.randint(0, len(myList)-1)])
 
 def indexValues():
     print ("At what index position do you want to search")
