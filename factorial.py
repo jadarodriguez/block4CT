@@ -6,4 +6,4 @@ def factorial(x):
 
 if __name__ == "__main__":
      num = input ("What number would you like the factoraial of?  ")
-     print ("The factorial of", num, "is", factorial(int(num))
+     print ("The factorial of", num, "is", factorial(int(num)))
