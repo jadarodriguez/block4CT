@@ -23,7 +23,8 @@ def mainProgram():
 5. Liner Search
 6. sort List
 7. print lists
-8. Quit """)
+8. Recursive Binary Search 
+9. Quit """)
         if choice == "1":
             addToList()
         elif choice == "2":
@@ -38,6 +39,9 @@ def mainProgram():
             sortList(myList)
         elif choice == "7":
             printLists()
+        elif choice == "8":
+            searchItem - input("What are you looking for?   ")
+            recursiveBinarySearch(unipue_list, 0, len(unipue_list)-1, int (searchItem))
         else:
                 break
 
@@ -89,8 +93,26 @@ def recursiveBinarySearch(unique_list, low, high, x):
             return recursiveBinarySearch(unique_list, low, mid-1, x)
         else:
             return recursiveBinarySearch(unique_list, mid +1, high, x)
+    else:
+        print ("Your number ins't here!")
+
+        
+def interativeBinarySearch(unpue_list, x):
+    low = 0
+    high = len(unique_list)-1
+    mid = 0
+
+    while low <= high:
+        mid = (high = low //2
+            
+        if unigue_list[mid] < x:
+            low = mid + 1
+        elif unipue_list[mid] > x:
+            high = mid - 1
         else:
-            print ("Your number ins't here!")
+            return mid
+        return -1
+
 
 def indexValues():
     print ("At what index position do you want to search")
@@ -104,6 +126,8 @@ def printList():
         whitchOne = input ("which list do you want to see? Sorted or un-sorted   ")
         if whitchOne.lower() == "sorted":
                            print(unique_list)
+
+                
 
 if __name__ == "__main__": 
     mainProgram()
