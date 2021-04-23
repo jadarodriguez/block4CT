@@ -103,10 +103,10 @@ def interativeBinarySearch(unpue_list, x):
     mid = 0
 
     while low <= high:
-        mid = (high = low //2
+        mid = (high + low //2
             
         if unigue_list[mid] < x:
-            low = mid + 1
+            low = mid +1
         elif unipue_list[mid] > x:
             high = mid - 1
         else:
